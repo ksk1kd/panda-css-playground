@@ -11,6 +11,11 @@ function App() {
         <p>
           <a href="/">Sample Link</a>
         </p>
+        <p>
+          <a href="/" className="btn">
+            Button
+          </a>
+        </p>
       </div>
     </>
   )

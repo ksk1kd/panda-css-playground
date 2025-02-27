@@ -12,6 +12,18 @@
   }
 }
 
+@layer recipes {
+  .btn {
+    display: inline-block;
+    background-color: #2b2b2b;
+    color: #fff;
+    font-weight: 700;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 0.25rem;
+  }
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
