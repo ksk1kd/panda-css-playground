@@ -1,5 +1,17 @@
 @layer reset, base, tokens, recipes, utilities;
 
+@layer base {
+  a {
+    color: blue;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.6;
+      text-decoration: underline;
+    }
+  }
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;

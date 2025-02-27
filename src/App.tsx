@@ -7,6 +7,10 @@ function App() {
         <h1 className={css({ fontSize: '6xl', fontWeight: 'bold' })}>
           Panda CSS Playground
         </h1>
+
+        <p>
+          <a href="/">Sample Link</a>
+        </p>
       </div>
     </>
   )
