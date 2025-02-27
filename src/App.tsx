@@ -18,6 +18,15 @@ function App() {
         </p>
 
         <p className={css({ bg: 'mint.500' })}>Background color is mint.</p>
+
+        <h2
+          className={css({
+            bg: { base: 'red.500', _hover: 'red.700' },
+            fontSize: '2xl',
+          })}
+        >
+          Pseudo Style
+        </h2>
       </div>
     </>
   )
