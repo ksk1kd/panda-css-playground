@@ -16,6 +16,8 @@ function App() {
             Button
           </a>
         </p>
+
+        <p className={css({ bg: 'mint.500' })}>Background color is mint.</p>
       </div>
     </>
   )

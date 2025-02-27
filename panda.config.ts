@@ -12,7 +12,13 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      tokens: {
+        colors: {
+          'mint.500': { value: 'oklch(0.72 0.11 178)' },
+        }
+      },
+    },
   },
 
   // The output directory for your css system
