@@ -3,13 +3,14 @@ import { css, cva } from '../styled-system/css'
 function App() {
   const button = cva({
     base: {
+      colorPalette: 'blue',
       display: 'flex',
       borderRadius: 'md',
     },
     variants: {
       visual: {
-        solid: { bg: 'blue.500', color: 'white' },
-        outline: { borderWidth: '3px', borderColor: 'blue.200' },
+        solid: { bg: 'colorPalette.500', color: 'white' },
+        outline: { borderWidth: '3px', borderColor: 'colorPalette.200' },
       },
       size: {
         sm: { padding: '2', fontSize: '12px' },
