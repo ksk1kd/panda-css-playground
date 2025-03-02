@@ -1,6 +1,23 @@
-import { css } from '../styled-system/css'
+import { css, cva } from '../styled-system/css'
 
 function App() {
+  const button = cva({
+    base: {
+      display: 'flex',
+      borderRadius: 'md',
+    },
+    variants: {
+      visual: {
+        solid: { bg: 'blue.500', color: 'white' },
+        outline: { borderWidth: '3px', borderColor: 'blue.200' },
+      },
+      size: {
+        sm: { padding: '2', fontSize: '12px' },
+        lg: { padding: '3', fontSize: '24px' },
+      },
+    },
+  })
+
   return (
     <>
       <div className="container">
@@ -27,6 +44,15 @@ function App() {
         >
           Pseudo Style
         </h2>
+
+        <p>
+          <button
+            type="button"
+            className={button({ visual: 'solid', size: 'lg' })}
+          >
+            Button
+          </button>
+        </p>
       </div>
     </>
   )
